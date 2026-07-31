@@ -1,0 +1,252 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#c62828;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffe082;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(135deg,#d32f2f,#b71c1c);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#c62828;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    margin:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ffe082;
+}
+
+.btn2{
+    background:#212121;
+    color:white;
+}
+
+.btn2:hover{
+    background:black;
+}
+
+/* Sections */
+
+section{
+    padding:70px;
+}
+
+section h2{
+    text-align:center;
+    color:#c62828;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+/* About */
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#c62828;
+    margin-bottom:15px;
+}
+
+/* Table */
+
+table{
+    width:80%;
+    margin:auto;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+table th{
+    background:#c62828;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+    border:1px solid #ddd;
+}
+
+/* Forms */
+
+form{
+    width:500px;
+    max-width:95%;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+form input,
+form select,
+form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+form button{
+    width:100%;
+    padding:15px;
+    background:#c62828;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:17px;
+    border-radius:5px;
+}
+
+form button:hover{
+    background:#a71d1d;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero-content h1{
+    font-size:38px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+section{
+    padding:40px 20px;
+}
+
+table{
+    width:100%;
+}
+
+}
